@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>ANALISADOR LEXICO</title>
+ <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+
+<script src="./js/index.js">
+
+</script>
+</head>
+<body>
+  <form id="form">
+  <div class="tela">
+          <div class="info-esquerda">
+        <a href="https://docs.google.com/document/d/1r2m4bIcSxbfvw0FeLDMK91N5zA1oAyWIHLHikj9d83M/edit?usp=sharing">Sobre</a>
+      </div>
+    <div class="info-linha">
+      <div class="info-esquerda">
+        <div class="titulo">COMPILADORES -- LUAN -- MATEUS</div>
+      </div>
+    </div>
+    <div class="info-linha">
+      <div class="info-esquerda">
+        <input class="btn btn-warning" id="Limpar" value="Limpar" onclick="limpar()"  type="button"></input>
+      </div>
+      <div class="info-direita">
+        <button class="btn btn-success" onclick="csimplefy.main()" id="compilar" type="button">Compilar</button>
+      </div>
+    </div>
+    <div class="info-linha codigo">
+      <textarea id="codigo" rows="20" cols="100"></textarea>
+    <!-- <textarea id="codigoResult" rows="10"></textarea> -->
+    </div>
+    <hr>
+    Análise
+    <table id="analise">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Token</th>
+          <th>Linha</th>
+        </tr>
+      </thead>
+      <tbody id="resultado"></tbody>
+    </table>
+
+  </div>
+  </form>
+</body>
+</html>
